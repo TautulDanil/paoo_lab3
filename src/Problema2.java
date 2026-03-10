@@ -18,7 +18,7 @@ public class Problema2 {
     {
         if(varf >= vector.length - 1)
         {
-            System.out.print("Eroare! Stiva este plina!");
+            System.out.print("stiva plina");
             return;
         }
         varf++;
@@ -29,12 +29,12 @@ public class Problema2 {
     {
         if(isEmpty())
         {
-            System.out.println("Eroare! Stiva este goala!");
+            System.out.println("stiva este goala");
             return 0;
         }
         int valoare = vector[varf];
         varf--;
-        System.out.println("Scos: " + valoare);
+        System.out.println("scos: " + valoare);
         return valoare;
     }
     public boolean isEmpty()
@@ -43,7 +43,7 @@ public class Problema2 {
     }
     public void afisareStiva() {
         if (isEmpty()) {
-            System.out.println("Stiva este goală.");
+            System.out.println("stiva este goala");
             return;
         }
         System.out.print("Stiva: ");
@@ -55,7 +55,7 @@ public class Problema2 {
 
     }
     public static void main(String[] args) {
-        System.out.println("***** Testare Stiva (dimensiune implicită 100) ****");
+        System.out.println("Testare stiva");
         Stiva s1 = new Stiva();
         
         s1.push(10);
@@ -73,7 +73,7 @@ public class Problema2 {
         s1.pop(); 
         System.out.println("Stiva este goală? " + s1.isEmpty());
         
-        System.out.println("\n**** Testare Stiva (dimensiune 3) **** ");
+        System.out.println("\ntestare stiva");
         Stiva s2 = new Stiva(3);
         
         s2.push(100);
