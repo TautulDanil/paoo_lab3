@@ -35,7 +35,7 @@ public class Problema1 {
             {
                 if(exponent < 0)
                 {
-                    throw new IllegalArgumentException("Exponentul trebuie sa fie >=0");
+                    return null;
                 }
                 Complex rezultat = new Complex(1,0);
                 for(int i = 0; i < exponent; i++)
